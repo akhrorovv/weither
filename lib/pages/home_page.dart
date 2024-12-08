@@ -40,9 +40,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(result?.location?.name ?? ""),
-        ),
         backgroundColor: Colors.black,
         body: Container(
           child: SingleChildScrollView(
@@ -64,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       IconButton(
                         onPressed: () {
-                          getResponseList();
+
                         },
                         icon: Container(
                           margin: EdgeInsets.all(10),
